@@ -34,7 +34,7 @@ void AMovingPlatform::Tick(float DeltaTime)
 
 	// Send platform back if gone too far
 		// Check how far we've moved
-	auto DistanceMoved = FVector::Dist(StartLocation, CurrentLocation);
+	const auto DistanceMoved = FVector::Dist(StartLocation, CurrentLocation);
 		// Reverse direction of motion of gone too far
 	if (DistanceMoved > MovedDistance)
 	{
